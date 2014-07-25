@@ -53,14 +53,14 @@ public class TestUserProfileImporterOk extends AbstractUserProfileImporterTest {
     public void userProfileImportsShouldSucceed() throws Exception {
         UserProfileImporter importer = new UserProfileImporter();
         
-        harness.deployContrib("org.nuxeo.ecm.user.center.profile",
+        harness.deployContrib("org.nuxeo.ecm.user.center.profile.test",
                 "OSGI-INF/user-profile-test-ok-contrib.xml");
 
         importer.doImport(session);
         
         checkDocs();
 
-        harness.undeployContrib("org.nuxeo.ecm.user.center.profile",
+        harness.undeployContrib("org.nuxeo.ecm.user.center.profile.test",
                 "OSGI-INF/user-profile-test-ok-contrib.xml");
         
         harness.deployContrib("org.nuxeo.ecm.user.center.profile.test",
