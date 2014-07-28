@@ -10,7 +10,7 @@
   <artifactId>nuxeo-user-profile</artifactId>
   <name>Nuxeo User Center Profile</name>
   <description>Nuxeo User Center Profile</description>
-
+ 
   <version>5.9.4-CKS1</version>
 
   <dependencies>
